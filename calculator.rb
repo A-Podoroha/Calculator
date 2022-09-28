@@ -8,7 +8,7 @@ def calculate(operation, a, b)
     return a*b
   when "/"
     res = a.to_f/b.to_f
-    if res.is_a? Integer
+    if res.to_i == res
       return res.to_i
     else
       return res
